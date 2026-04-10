@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url('1234.jpeg') center/cover no-repeat fixed;
+    position: relative;
+    color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed; 
+    inset: 0;
+    background: inherit;
+    filter: blur(4px);
+    transform: scale(1.05);
+    z-index: -1;
+    pointer-events: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 5px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+a:hover {
+  color: #ff4444;
+  transform: scale(1.4);
+  text-shadow: 
+      0 0 8px #552a9b,
+      0 0 16px #5536a4,
+      0 0 24px #573592,
+      0 0 40px #571f7c;
+}
+table {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table:hover {
+  transform: scale(1.05);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%   { box-shadow: 0 0 10px #3B82F6; }
+  50%  { box-shadow: 0 0 25px #3B82F6; }
+  100% { box-shadow: 0 0 10px #3B82F6; }
+}
+box-shadow: 0 0 15px #3B82F6, 0 0 30px rgba(59,130,246,0.6);
+.container {
+  padding: 20px;
+}
+.navbar {
+  background: rgba(59, 130, 246, 0.20); /* خلفية شفافة */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1E40AF;
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 10px;
+  z-index: 999;
+  margin: 0 auto; /* يخليها في النص */
+  width: fit-content; /* أهم سطر: ياخد على قد المحتوى */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 14px;
+  font-size: 16px;
+  border: 1px solid #1E40AF;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: rgba(30, 64, 175, 0.4);
+  transform: scale(1.12);
+}
+.main-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #000;
+}
