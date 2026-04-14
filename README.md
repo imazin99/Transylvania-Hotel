@@ -1,5 +1,6 @@
 **🏨 Transylvania Hotel Website**                                                                   
-A simple and visually engaging web project inspired by Hotel Transylvania.
+A simple and visually engaging web project inspired by Hotel Transylvania.               **## 📸 Preview**
+![Website Preview](preview.png)
 **🎯 Purpose**                                                                              
 This project was created for learning and practice purposes.                                  
 It focuses on applying core web development concepts such as:                                
